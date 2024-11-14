@@ -29,6 +29,12 @@ body {
     min-height: 100vh;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0;
+    width:100%;
+}
+
 h1
 {
     color: var(--primary-color);
@@ -59,6 +65,12 @@ p, h5, h6 {
     background-color: var(--highlight-color);
     border: var(--highlight-color);
 }
+
+.btn:hover {
+    color: var(--highlight-color);
+    background-color: var(--primary-color);
+    border: var(--highlight-color);
+}
 /* Navbar */
 
 .navbar {
@@ -81,11 +93,13 @@ p, h5, h6 {
 
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/hero.webp') no-repeat center center;
-    background-size: cover;
     background-color: var(--dark-background-color);
     /* prevent navbar hiding section title*/
     padding: 16rem 0 10px;
     min-height: 50vh;
+      /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .hero-section p {
@@ -110,10 +124,12 @@ p, h5, h6 {
 
 .section-dark p {
     color: var(--calm-primary-color);
+    padding-top: -1%;
 }
 
 .section-light{
     background-color: var(--calm-primary-color);
+    padding-top: -1%;
 }
 
 /* About section */
@@ -167,6 +183,14 @@ p, h5, h6 {
     width: 180px;
 }
 
+.video .lead {
+    padding-top: -30px;
+}
+
+.carousel-inner {
+    min-height: 350px;
+}
+
 .carousel * {
     background-color: #fff7ef;
     color: var(--secondary-color);
@@ -205,6 +229,20 @@ p, h5, h6 {
     color: var(--secondary-color);
 }
 
+/* Link colour */
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--light-highlight-color);
+}
+
+/* Emergency logos
+#emergency img {
+    margin-bottom: 5%;
+} */
 /* footer */
 .footer {
     background-color: var(--light-highlight-color);
@@ -223,29 +261,21 @@ p, h5, h6 {
     .hero-section .lead {
         font-size: 0.8rem;
     }
+    .carousel-inner {
+        padding: 10%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .carousel-inner {
+        padding: 10%;
+    }
 
 }
 
-@media screen and (max-width: 768px) {
-
-    .video-thumbnail {
-        display:inline-block;
+@media screen and (max-width:768px) {
+    .carousel-inner {
+        padding: 10%;
     }
 
-    .video {
-        display:none;
-    }
-
-    .video-link {
-        display: inline-block;
-    }
-
-    .video-link a {
-        text-decoration: none;
-        /* color: var(--highlight-color); */
-    }
-    .video .iframe {
-        width: 364px;
-        height: 204.75px; 
-    }
 }
