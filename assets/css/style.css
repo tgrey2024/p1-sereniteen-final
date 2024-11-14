@@ -1,0 +1,251 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Open+Sans:wght@500&display=swap');
+/* CSS Variables */
+:root {
+    --primary-font: 'Gloria Hallelujah', serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --primary-color: #fff7ef; /* off white */
+    --secondary-color: #402e32; /* dark brown */
+    --highlight-color: #ef8a01; /* orange */
+    --light-highlight-color: #a22101; /* redwood */
+    --dark-background-color: #0D3935; /* dark green */
+    --calm-primary-color: #fff7ef; /* beige */
+}
+
+/* Global styles */
+
+/* resets browser to clean slate */
+/* reset to remove any default padding and margin that browsers apply to elements */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: var(--calm-primary-color);
+    font-family: var(--secondary-font);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1
+{
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+}
+
+h2,
+h3 {
+    color: var(--light-highlight-color);
+    font-family: var(--primary-font);
+}
+
+h4 {
+    /* padding-top: 10rem; */
+    color: var(--highlight-color);
+    font-family: var(--primary-font);
+}
+
+p, h5, h6 {
+    color:var(--secondary-color);
+    font-family: var(--secondary-font);
+    
+}
+
+.btn {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    background-color: var(--highlight-color);
+    border: var(--highlight-color);
+}
+/* Navbar */
+
+.navbar {
+    background-color: var(--light-highlight-color);
+    padding-right: 1rem;
+    padding-left: 1.3rem;
+}
+
+.nav-link {
+    color: var(--primary-color);
+}
+
+.navbar img {
+    width: 30px;
+    margin-right: 1rem;
+}
+
+
+/* Hero section */
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/hero.webp') no-repeat center center;
+    background-size: cover;
+    background-color: var(--dark-background-color);
+    /* prevent navbar hiding section title*/
+    padding: 16rem 0 10px;
+    min-height: 50vh;
+}
+
+.hero-section p {
+    color: var(--calm-primary-color);
+    font-family: var(--secondary-font);
+    
+}
+
+.section{
+    min-height: 40vh;
+    height: 80vh;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center; /* centers flex items horizontally within container */
+    align-items: center; /* centers flex items vertically within container */
+    gap: 5px;
+}
+
+.section-dark{
+    background-color: var(--dark-background-color);
+}
+
+.section-dark p {
+    color: var(--calm-primary-color);
+}
+
+.section-light{
+    background-color: var(--calm-primary-color);
+}
+
+/* About section */
+.about {
+    padding: 10%
+}
+
+.accordion-button {
+    font-family: var(--secondary-font);    
+}
+
+.accordion {
+    margin-bottom: 1.6rem;
+    /* padding: 20%; */
+}
+
+/* Get Help Section */
+.get-help img {
+    width: 100%;
+    margin: 10px;
+}
+
+#resources a , #organisations a{
+    text-decoration: none;
+}
+
+#resources a:hover, #organisations a:hover, 
+.carousel-control-prev-icon, .carousel-control-next-icon {  
+    color: var(--highlight-color);
+}
+
+#resources p, #organisations p {
+    padding: 0 10%;
+}
+
+#resources .row, #organisations .row{
+    padding: 10%;
+}
+
+/* Stories section */
+.video-link {
+    display:none;
+}
+
+.video iframe{
+    border: none;
+}
+
+.video-thumbnail {
+    display:none;
+    width: 180px;
+}
+
+.carousel * {
+    background-color: #fff7ef;
+    color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.stories {
+    align-content: center;
+}
+
+.story p {
+    color: var(--dark-background-color);
+    padding: 0 10%;
+}
+
+.get-help p{
+    color: var(--calm-primary-color);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding-top: 1.3rem;
+}
+/* Cards section */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 5%;
+}
+
+#self-help .card-text {
+    color: var(--secondary-color);
+}
+
+/* Talking section */
+#talking li{
+    color: var(--secondary-color);
+}
+
+/* footer */
+.footer {
+    background-color: var(--light-highlight-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    height: 5vh;
+}
+
+.footer p {
+    color: var(--primary-color);}
+
+
+/* Media queries */
+@media screen and (max-width:384px) {
+    .hero-section .lead {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .video-thumbnail {
+        display:inline-block;
+    }
+
+    .video {
+        display:none;
+    }
+
+    .video-link {
+        display: inline-block;
+    }
+
+    .video-link a {
+        text-decoration: none;
+        /* color: var(--highlight-color); */
+    }
+    .video .iframe {
+        width: 364px;
+        height: 204.75px; 
+    }
+}
