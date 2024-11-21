@@ -52,12 +52,12 @@ Co-pilot was used to generate some personas, which were then reviewed and refine
 ##### Persona 1: Jake, The Anxious Teenager, Age: 16, Occupation: Year 11 Student, Tech Comfort: High
 Background: Jake is a secondary school student who excels academically but struggles with social anxiety. He often feels overwhelmed and is looking for ways to manage his stress and anxiety.
 Goals:
-        * Learn effective coping mechanisms for anxiety.
-        * Access resources and tools specifically designed for teenagers.
-        * Find relatable stories and experiences from other teens dealing with anxiety.
+        - Learn effective coping mechanisms for anxiety.
+        - Access resources and tools specifically designed for teenagers.
+        - Find relatable stories and experiences from other teens dealing with anxiety.
 Challenges:
-        * Feeling embarrassed or reluctant to seek help from adults.
-        * Difficulty concentrating on long articles or technical content.
+        - Feeling embarrassed or reluctant to seek help from adults.
+        - Difficulty concentrating on long articles or technical content.
 
 
 #### Persona 2: Sarah, The Concerned Parent, Age: 42, Occupation: Full-Time Working Mum, Tech Comfort: Moderate
